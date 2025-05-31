@@ -1,4 +1,4 @@
-# 📈 Week 1: Predicting Price Moves with News Sentiment
+# 📈 Predicting Price Moves with News Sentiment
 
 This project is part of the 10 Academy Artificial Intelligence Mastery (AIM) challenge. The goal is to analyze financial news data and identify correlations between **news sentiment** and **stock price movements** through Exploratory Data Analysis (EDA), NLP, and quantitative indicators.
 
