@@ -1,6 +1,6 @@
 # 📈 Predicting Price Moves with News Sentiment
 
-This project is part of the 10 Academy Artificial Intelligence Mastery (AIM) challenge. The goal is to analyze financial news data and identify correlations between **news sentiment** and **stock price movements** through Exploratory Data Analysis (EDA), NLP, and quantitative indicators.
+This project is part of the **10 Academy Artificial Intelligence Mastery (AIM)** challenge – Week 1. The goal is to analyze financial news headlines and identify correlations between news sentiment and stock price movements using Exploratory Data Analysis (EDA), Natural Language Processing (NLP), and quantitative indicators.
 
 ---
 
@@ -10,39 +10,25 @@ Nova Financial Solutions aims to improve its predictive analytics using real-tim
 
 ---
 
-## 📂 Project Structure
+## ✅ Completed Work
 
-10AIM-Week1/
-├── data/
-│ └── raw_data.csv # Financial news dataset
-├── notebooks/
-│ └── eda.ipynb # Exploratory Data Analysis notebook
-├── scripts/
-│ └── helpers.py # Reusable functions (optional)
-├── src/
-│ └── init.py # Placeholder for modular code
-├── tests/
-│ └── test_helpers.py # Unit tests (optional)
-├── .github/
-│ └── workflows/unittests.yml # GitHub Actions CI (optional)
-├── .gitignore
-├── README.md
-├── requirements.txt
-
-yaml
-Copy
-Edit
+- ✅ Dataset Loaded and Cleaned
+- ✅ Headline Length and Frequency Analysis
+- ✅ Publisher and Stock Symbol Distribution
+- ✅ Time-Based Article Trends (daily/hourly)
+- ✅ TF-IDF Keyword Extraction
+- ✅ Word Cloud for News Topics
 
 ---
 
-## ✅ Completed Work
+## 📊 Results and Key Insights
 
-- [x] Dataset Loaded and Cleaned
-- [x] Headline Length and Frequency Analysis
-- [x] Publisher and Stock Symbol Distribution
-- [x] Time-Based Article Trends (daily/hourly)
-- [x] TF-IDF Keyword Extraction
-- [x] Word Cloud for News Topics
+- Most headlines are between **60–120 characters**, showing a tendency toward concise financial communication.
+- Top publishers include **Reuters**, **Yahoo Finance**, and **Bloomberg**.
+- Stocks like **AAPL**, **TSLA**, and **GOOG** dominate the news mentions.
+- News publishing peaks around **midday UTC-4**, aligning with market activity.
+- TF-IDF analysis reveals keywords like **earnings**, **target**, and **report** are most common.
+- The Word Cloud confirms strong focus on earnings, market movements, and price actions.
 
 ---
 
@@ -52,7 +38,7 @@ Edit
 |----------------------|---------------------------|
 | Data Analysis         | pandas, numpy             |
 | Visualization         | matplotlib, seaborn       |
-| NLP                   | sklearn, nltk, wordcloud  |
+| NLP                   | scikit-learn, nltk, wordcloud  |
 | Time Series (Upcoming)| TA-Lib, PyNance           |
 | Project Management    | Git, GitHub, Jupyter      |
 
@@ -68,54 +54,37 @@ Edit
 
 ---
 
-## 🗂️ Setup Instructions
+## ▶️ Usage Instructions
 
-1. Clone the repo:
+To run this project locally:
+
 ```bash
-git clone https://github.com/your-username/10AIM-week1.git
-cd 10AIM-week1
-Create a virtual environment:
+# Clone the repository
+git clone https://github.com/Becky-Chala/aim-week1-challenge.git
+cd aim-week1-challenge
 
-bash
-Copy
-Edit
+# Create and activate a virtual environment
 python -m venv .venv
-source .venv/bin/activate  # or .venv\\Scripts\\activate on Windows
-Install dependencies:
+source .venv/bin/activate        # On Windows: .venv\Scripts\activate
 
-bash
-Copy
-Edit
+# Install all dependencies
 pip install -r requirements.txt
-Launch the notebook:
 
-bash
-Copy
-Edit
+# Launch the notebook
 jupyter notebook notebooks/eda.ipynb
-👥 Contributors
-Bereket [Becky] – Data Analyst & Financial Insight Enthusiast
+```
 
-10 Academy AI Mastery Challenge – Week 1 Cohort
-
-📌 License
-This project is for educational purposes under the 10 Academy AIM program.
-
-yaml
-Copy
-Edit
+Ensure your dataset (`raw_data.csv`) is placed inside the `data/` directory.
 
 ---
 
-## 📄 `requirements.txt`
+## 👥 Contributors
 
-Make sure this file includes:
-```txt
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-wordcloud
-nltk
-jupyter
+- **Bereket [Becky]** – Data Analyst & Financial Insight Enthusiast  
+- **10 Academy AIM Challenge – Week 1 Cohort**
+
+---
+
+## 📌 License
+
+This project is for educational purposes under the 10 Academy AIM program.
