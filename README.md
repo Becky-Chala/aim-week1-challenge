@@ -1,93 +1,116 @@
-<<<<<<< HEAD
-=======
-# 📈 Predicting Price Moves with News Sentiment
+```markdown
+# 📈 AIM Week 1 Challenge – News Sentiment & Stock Price Correlation
 
-This project is part of the **10 Academy Artificial Intelligence Mastery (AIM)** challenge – Week 1. The goal is to analyze financial news headlines and identify correlations between news sentiment and stock price movements using Exploratory Data Analysis (EDA), Natural Language Processing (NLP), and quantitative indicators.
-
----
-
-## 📌 Business Objective
-
-Nova Financial Solutions aims to improve its predictive analytics using real-time news sentiment. This project explores the relationship between financial news headlines and stock performance, providing actionable insights into how public sentiment influences market behavior.
+This project explores the relationship between financial news sentiment and short-term stock market movements. It is divided into three progressive tasks involving data cleaning, sentiment analysis, and correlation evaluation.
 
 ---
 
-## ✅ Completed Work
+## 📂 Project Structure
 
-- ✅ Dataset Loaded and Cleaned
-- ✅ Headline Length and Frequency Analysis
-- ✅ Publisher and Stock Symbol Distribution
-- ✅ Time-Based Article Trends (daily/hourly)
-- ✅ TF-IDF Keyword Extraction
-- ✅ Word Cloud for News Topics
-
----
-
-## 📊 Results and Key Insights
-
-- Most headlines are between **60–120 characters**, showing a tendency toward concise financial communication.
-- Top publishers include **Reuters**, **Yahoo Finance**, and **Bloomberg**.
-- Stocks like **AAPL**, **TSLA**, and **GOOG** dominate the news mentions.
-- News publishing peaks around **midday UTC-4**, aligning with market activity.
-- TF-IDF analysis reveals keywords like **earnings**, **target**, and **report** are most common.
-- The Word Cloud confirms strong focus on earnings, market movements, and price actions.
-
----
-
-## 🧠 Tools and Libraries Used
-
-| Category              | Libraries/Tools           |
-|----------------------|---------------------------|
-| Data Analysis         | pandas, numpy             |
-| Visualization         | matplotlib, seaborn       |
-| NLP                   | scikit-learn, nltk, wordcloud  |
-| Time Series (Upcoming)| TA-Lib, PyNance           |
-| Project Management    | Git, GitHub, Jupyter      |
-
----
-
-## 🔮 Next Steps
-
-- Perform sentiment analysis using TextBlob or VADER
-- Collect and align stock price data by date
-- Calculate technical indicators (MA, RSI, MACD) using TA-Lib
-- Correlate average sentiment scores with daily stock returns
-- Generate insights for predictive financial modeling
-
----
-
-## ▶️ Usage Instructions
-
-To run this project locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/Becky-Chala/aim-week1-challenge.git
-cd aim-week1-challenge
-
-# Create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate        # On Windows: .venv\Scripts\activate
-
-# Install all dependencies
-pip install -r requirements.txt
-
-# Launch the notebook
-jupyter notebook notebooks/eda.ipynb
 ```
 
-Ensure your dataset (`raw_data.csv`) is placed inside the `data/` directory.
+aim-week1-challenge/
+│
+├── data/
+│   ├── raw\_analyst\_ratings.csv        
+│   ├── AAPL\_historical\_data.csv       
+│   ├── ...                              
+│
+├── notebooks/
+│   └── AIM\_Week1\_Challenge.ipynb     
+│
+├── README.md                           
+└── requirements.txt                      
+
+````
 
 ---
 
-## 👥 Contributors
+## ✅ Tasks Overview
 
-- **Bereket [Becky]** – Data Analyst & Financial Insight Enthusiast  
-- **10 Academy AIM Challenge – Week 1 Cohort**
+### 🔹 Task 1: Exploratory Data Analysis
+- Loaded and cleaned the `raw_analyst_ratings.csv` file.
+- Extracted relevant fields: `date`, `headline`, and `stock`.
+- Explored stock frequency and headline trends over time using visualizations.
+
+### 🔹 Task 2: Sentiment Analysis
+- Applied **TextBlob** to compute sentiment polarity for each headline.
+- Grouped by stock and date to calculate average daily sentiment.
+- Visualized sentiment trends to identify impactful news periods.
+
+### 🔹 Task 3: Sentiment vs. Stock Price Correlation
+- Loaded historical stock price data (AAPL, AMZN, TSLA, etc.).
+- Computed daily returns from adjusted close prices.
+- Merged with sentiment data on date and stock.
+- Calculated Pearson correlation coefficients and visualized results.
 
 ---
 
-## 📌 License
+## ⚙️ Installation
 
-This project is for educational purposes under the 10 Academy AIM program.
->>>>>>> fae9f597a5a872b1e585d2228671e81198269f12
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Becky-Chala/aim-week1-challenge.git
+cd aim-week1-challenge
+````
+
+2. Create a virtual environment (optional but recommended):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Run
+
+1. Open the notebook:
+
+```bash
+jupyter notebook notebooks/AIM_Week1_Challenge.ipynb
+```
+
+2. Run the notebook cells step-by-step.
+3. Ensure the stock and sentiment data are in the correct `data/` folder.
+
+---
+
+## 📊 Example Output
+
+* Correlation scores table showing the relationship between news sentiment and stock return per company.
+* Visual scatter plots of sentiment vs. return.
+
+---
+
+## 📌 Key Tools Used
+
+* `pandas`, `numpy` – Data manipulation
+* `TextBlob` – Sentiment analysis
+* `matplotlib`, `seaborn` – Data visualization
+* `scipy` – Pearson correlation calculation
+
+---
+
+## 📈 Results
+
+* Weak-to-moderate correlations between sentiment and returns were observed.
+* Sentiment appears to be one of several influencing factors in stock performance.
+* Recommendation: combine with other indicators for better prediction.
+
+---
+
+
+## 🙋‍♂️ Author
+
+**Bereket Chala**
+GitHub: [@Becky-Chala](https://github.com/Becky-Chala)
+
+---
